@@ -38,8 +38,8 @@ a { text-decoration: none; }
 .main-header-home { position: relative; display: flex; align-items: center; }
 .main-header-home i { padding: 0 0 1px 5px; }
 
-.main-header-navbar a {border-bottom: 4px solid transparent;}
-.main-header-navbar a:hover { border-bottom-color:#ff4081; transition: 0.3s ease-in-out;}
+/* .main-header-navbar a {border-bottom: 4px solid transparent;} */
+/* .main-header-navbar a:hover { border-bottom-color:#ff4081; transition: 0.3s ease-in-out;} */
 
 .main-header-right { display: flex; align-items: center; justify-content: flex-end; margin-right: 58px;
 justify-self: flex-start;}
