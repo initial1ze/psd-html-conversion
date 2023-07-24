@@ -137,7 +137,8 @@ a { text-decoration: none; }
 .article-567-likes i { padding-right: 4px; }
 #article-7 .article-567-comments {right: 67px;}
 .article-567-info h4 { font-size: 15px; font-weight: 800; padding-top: 11px; padding-left: 19px; line-height: 24px; }
-.article-567-info > p { font-size: 14px; line-height: 21.5px; padding-left: 19px; padding-right: 25px; padding-top: 6.5px; padding-bottom: 23px; font-family: 'Open Sans', sans-serif; font-weight: 500; color: #3d3d3d; border-bottom: 2px solid #e0e0e0; }
+.article-567-info > p { font-size: 14px; line-height: 21.5px; padding-left: 19px; padding-right: 25px; padding-top: 6.5px; padding-bottom: 23px; font-family: 'Open Sans', sans-serif; font-weight: 500; color: #3d3d3d; border-bottom: 2px solid #e0e0e0; line-clamp: 4; position: relative;}
+.article-567-info>p::after { content: ""; position: absolute; height: 40px; width: 100%; bottom: 0; right: 0; background: linear-gradient(to right, transparent 59%, rgb(255, 255, 255) 100%); }
 .article-567-footer { margin-bottom: 15px; }
 .article-567-author { display: inline-block; width: 50px; height: 50px; border-radius: 50%; background-image: url('./assets/author_2.png'); margin-left: 20px; margin-top: 15px; background-size: cover;}
 .article-567-footer p { display: inline-block; vertical-align: top; }
@@ -163,7 +164,8 @@ a { text-decoration: none; }
 .article-89-likes { bottom: 17px; right: 21px; font-size: 13px; }
 .article-89-likes i { padding-right: 4px; }
 .article-89-info h4 { font-size: 19px; font-weight: 800; padding-top: 12px; padding-left: 20px; }
-.article-89-info > p { font-size: 16px; line-height: 26px; padding-left: 19px; padding-right: 25px; padding-top: 5.75px; padding-bottom: 13px; font-family: 'Open Sans', sans-serif; font-weight: 500; color: #3d3d3d; border-bottom: 2px solid #e0e0e0; }
+.article-89-info > p { font-size: 16px; line-height: 26px; padding-left: 19px; padding-right: 25px; padding-top: 5.75px; padding-bottom: 13px; font-family: 'Open Sans', sans-serif; font-weight: 500; color: #3d3d3d; border-bottom: 2px solid #e0e0e0; position: relative; }
+.article-89-info>p::after { content: ""; position: absolute; height: 40px; width: 100%; bottom: 0; left: 0; background: linear-gradient(to right, transparent 59%, rgb(255, 255, 255) 100%); }
 .article-89-footer { margin-bottom: 10px; }
 .article-89-author { display: inline-block; width: 50px; height: 50px; border-radius: 50%; background-image: url('./assets/author_2.png'); margin-left: 19px; margin-top: 14px; background-size: cover;}
 .article-89-footer p { display: inline-block; vertical-align: top; margin-top: 19px; margin-left: 3px; }
