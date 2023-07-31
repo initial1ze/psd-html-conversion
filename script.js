@@ -30,41 +30,17 @@ function toggleClassBlogCategory(clickedBlogItem) {
 
 
 
-let idx = 8;
-
-function resizeImageContainer() {
+function resizeImageContainer2() {
+    const sliderMainContainer = document.querySelector('.slider-main-container');
     const imageSliderContainer = document.querySelector('.image-slider-container');
-    const divs = imageSliderContainer.querySelectorAll('div');
-    const individualWidth = 189.9;
 
-    const divWidth = divs.length * individualWidth;
-    const width = document.body.clientWidth;
+    const numberOfCopies = 2;
 
-    const extraSpace = width - divWidth;
-    const extraDivs = Math.abs(Math.ceil(extraSpace / individualWidth));
-
-    for (let i = 0; i < extraDivs; i++) {
-        idx = (idx % 8 + 8) % 8;
-        const clonedDiv = divs[idx].cloneNode(true);
-
-        if (extraSpace > 0) {
-            imageSliderContainer.appendChild(clonedDiv);
-            idx++;
-        }
-        else {
-            imageSliderContainer.removeChild(imageSliderContainer.lastChild);
-            idx--;
-        }
+    for (let i = 0; i < numberOfCopies; i++) {
+        const imageSliderCopy = imageSliderContainer.cloneNode(true);
+        imageSliderCopy.classList.add('duplicated');
+        sliderMainContainer.appendChild(imageSliderCopy);
     }
-
-    const currScreenWidth = document.body.clientWidth;
-    const numberOfDivs = imageSliderContainer.children.length;
-    const newIndividualWidth = currScreenWidth / numberOfDivs;
-
-    imageSliderContainer.querySelectorAll('div').forEach(div => div.style.width = `${newIndividualWidth}px`);
 }
 
-window.addEventListener('load', resizeImageContainer);
-
-window.addEventListener('resize', resizeImageContainer);
-
+window.addEventListener('load', resizeImageContainer2);

@@ -259,8 +259,22 @@ a { text-decoration: none; }
 /* Sidebar Tags Ends Here */
 
 /* Image SLider Starts Here */
-.image-slider-container { display: flex; overflow-x: hidden; }
-.image-slider-container div { background-size: cover; background-repeat: no-repeat; background-position: center; aspect-ratio: 4/3; width: 189.9px; flex-grow: 1; flex-shrink: 0; display: inline-block; }
+.slider-main-container { display: flex; overflow-x: hidden; }
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slider-main-container:hover .image-slider-container { animation-play-state: paused; }
+.image-slider-container { display: flex; 
+    /* animation: 7s slide infinite linear;  */
+}
+.image-slider-container div { background-size: cover; background-repeat: no-repeat; background-position: center; min-width: 242px;   min-height: 240px;}
 .slider-1 { background-image: url('assets/slider_1.png'); }
 .slider-2 { background-image: url('assets/slider_2.png'); }
 .slider-3 { background-image: url('assets/slider_3.png'); }
@@ -270,4 +284,72 @@ a { text-decoration: none; }
 .slider-7 { background-image: url('assets/slider_7.png'); }
 .slider-8 { background-image: url('assets/slider_8.png'); }
 /* Image Slider Ends Here */
+
+/* Footer Starts Here */
+
+footer {
+    background-color: #212121;
+    height: 500px;
+    /* width: 1170px; */
+    /* margin: 0 auto; */
+    /* position: relative; */
+}
+
+.footer-container {
+    width: 1170px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.footer-subscribe-container {
+    /* height: 200px; */
+    background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url('assets/footer_subscribe.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-subscribe {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: start;
+    width: 1170px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 71px 0;
+    padding-bottom: 77px;
+}
+
+.footer-subscribe h1 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    /* word-spacing: 3px; */
+}
+
+.footer-subscribe form {
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-between; */
+}
+
+.footer-subscribe input {
+    background: transparent;
+    border-radius: 28px;
+    padding: 15px;
+    border: 1px solid #747577;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer-subscribe button {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer
+}
+
 
