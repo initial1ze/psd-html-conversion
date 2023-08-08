@@ -3,7 +3,7 @@ let defaultActiveNavbarItem = document.querySelector('.active-navbar');
 let activeNavbarItem = defaultActiveNavbarItem;
 
 function toggleClassNavbar(clickedNavbarItem) {
-    if (activeNavbarItem == clickedNavbarItem) {
+    if (activeNavbarItem === clickedNavbarItem) {
         return;
     }
     activeNavbarItem.classList.remove('active-navbar');
@@ -18,7 +18,7 @@ let defaultActiveBlogItem = document.querySelector('.active-blog-category');
 let activeBlogItem = defaultActiveBlogItem;
 
 function toggleClassBlogCategory(clickedBlogItem) {
-    if (activeBlogItem == clickedBlogItem) {
+    if (activeBlogItem === clickedBlogItem) {
         return;
     }
     activeBlogItem.classList.remove('active-blog-category');
@@ -44,3 +44,23 @@ function resizeImageContainer2() {
 }
 
 window.addEventListener('load', resizeImageContainer2);
+
+
+let activePagesWidgetItem = null;
+function togglePagesWidget(clickedPagesWidgetItem) {
+    const icon = clickedPagesWidgetItem.querySelector('span');
+    if (activePagesWidgetItem === clickedPagesWidgetItem) {
+        clickedPagesWidgetItem.classList.remove('pages-tab-active');
+        icon.textContent = 'add';
+        activePagesWidgetItem = null;
+        return;
+    }
+    if (activePagesWidgetItem) {
+        activePagesWidgetItem.classList.remove('pages-tab-active');
+        const activeIcon = activePagesWidgetItem.querySelector('span');
+        activeIcon.textContent = 'add';
+    }
+    clickedPagesWidgetItem.classList.toggle('pages-tab-active');
+    icon.textContent = 'remove';
+    activePagesWidgetItem = clickedPagesWidgetItem;
+}

@@ -287,69 +287,132 @@ a { text-decoration: none; }
 
 /* Footer Starts Here */
 
-footer {
-    background-color: #212121;
-    height: 500px;
-    /* width: 1170px; */
-    /* margin: 0 auto; */
-    /* position: relative; */
-}
+footer { background-color: #212121; }
+.footer-subscribe-container { background-image: linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.85)), url('assets/footer_subscribe.png'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.footer-subscribe { display: flex; color: white; align-items: center; width: 1170px; margin: 0 auto; gap: 39px; }
+.footer-subscribe h1 { font-size: 42px; font-weight: 800; letter-spacing: 1.5px; margin-top: 71px; margin-bottom: 77px; }
+.footer-subscribe form { display: flex; }
+.footer-subscribe input { background: transparent; border-radius: 28px; padding-top: 12px; padding-bottom: 11px; padding-left: 18px; padding-right: 38px; border: 1px solid #747577; font-size: 17px; font-weight: 500; margin-right: 30px; margin-top: 74px; margin-bottom: 73px; }
+.footer-subscribe button { filter: drop-shadow(0px 21px 15px rgba(48, 63, 159, 0.2)); background-color: #303f9f; color: white; padding-bottom: 9.5px; padding-top: 11px; padding-left: 31px; padding-right: 30.5px; border-color: transparent; cursor: pointer; font-size: 17.3px; text-transform: uppercase; font-weight: 500; letter-spacing: 0.5px; border-radius: 28px; margin-top: 73px; margin-bottom: 74.5px; }
 
-.footer-container {
-    width: 1170px;
-    margin: 0 auto;
-    height: 500px;
-}
-
-.footer-subscribe-container {
-    /* height: 200px; */
-    background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url('assets/footer_subscribe.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.footer-subscribe {
+.footer-widget-container {
     display: flex;
-    color: white;
-    align-items: center;
-    justify-content: start;
     width: 1170px;
     margin: 0 auto;
+    margin-top: 45px;
+    padding-bottom: 30px;
     gap: 30px;
-    padding: 71px 0;
-    padding-bottom: 77px;
 }
 
-.footer-subscribe h1 {
-    font-size: 42px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    /* word-spacing: 3px; */
-}
-
-.footer-subscribe form {
-    display: flex;
-    gap: 50px;
-    /* justify-content: space-between; */
-}
-
-.footer-subscribe input {
-    background: transparent;
-    border-radius: 28px;
-    padding: 15px;
-    border: 1px solid #747577;
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.footer-subscribe button {
-    background-color: #3f51b5;
+.footer-widget-container > * {
+    flex: 1;
     color: white;
-    padding: 10px;
-    border-color: transparent;
-    border-radius: 5px;
-    cursor: pointer
 }
 
+.footer-widget-container h3 {
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
 
+.footer-pages-widget > ul {
+    margin-left: 0.5px;
+}
+
+.footer-pages-widget li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer-pages-widget p {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-family: "Open Sans";
+    color: #bdbdbd;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0 13.5px;
+    padding-right: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+}
+
+.footer-pages-widget p:hover {
+    color: #ffffff;
+}
+
+.pages-tab-content {
+    display: none;
+    padding: 6px;
+    color: #909090;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    font-size: 15px;
+    padding-left: 12px;
+    font-family: "Open Sans";
+}
+.pages-tab-content li {
+    margin-bottom: 16px;
+}
+
+.pages-tab-content li:last-child {
+    margin-bottom: 13px;
+}
+
+.pages-tab-active ul{
+    display: block;
+}
+
+.footer-twitter-widget .footer-heading {
+    margin-bottom: 21px;
+}
+
+.footer-twitter-widget-card a {
+    color: #bdbdbd;
+    font-family: "Open Sans";
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    margin-left: 9px;
+}
+
+.footer-twitter-widget-card a i {
+    color: #55acee;
+    font-size: 24px;
+    margin-top: 2px;
+    margin-right: 15px;
+}
+
+.footer-twitter-widget-card a p {
+    line-height: 21.5px;
+}
+
+.footer-twitter-widget .footer-twitter-widget-card > p {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    margin-left: 1px;
+}
+
+.footer-twitter-widget-card > p a, .footer-twitter-widget-card > p span {
+    color: #888888;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
+.footer-twitter-widget-card > p i {
+    color: #888888;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.footer-twitter-widget-card > p a {
+    text-decoration-line: underline;
+}
