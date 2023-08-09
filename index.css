@@ -304,9 +304,9 @@ footer { background-color: #212121; }
 /* Pages Widget Starts Here */
 .footer-pages-widget > ul { margin-left: 0.5px; }
 .footer-pages-widget li{ list-style: none; margin-bottom: 5px; }
-.footer-pages-widget p { text-transform: uppercase; display: flex; align-items: center; justify-content: space-between; font-weight: 700; font-family: "Open Sans"; color: #bdbdbd; cursor: pointer; font-size: 14px; letter-spacing: 1px; /* padding: 0 13.5px; padding-right: 9px; padding-top: 10px; padding-bottom: 10px; */ padding: 10px 9px 10px 13.5px; border: 1px solid #757575; border-radius: 4px; }
+.footer-pages-widget p { text-transform: uppercase; display: flex; align-items: center; justify-content: space-between; font-weight: 700; font-family: "Open Sans"; color: #bdbdbd; cursor: pointer; font-size: 14px; letter-spacing: 1px; padding: 10px 9px 10px 13.5px; border: 1px solid #757575; border-radius: 4px; }
 .footer-pages-widget p:hover { color: #ffffff; }
-.pages-tab-content { display: none; /* padding: 6px; */ border: 1px solid #757575; border-radius: 4px; font-size: 15px; /* padding-left: 12px; */ font-family: "Open Sans"; /* padding-top: 11px; */ padding: 11px 6px 6px 12px; }
+.pages-tab-content { display: none; border: 1px solid #757575; border-radius: 4px; font-size: 15px; font-family: "Open Sans"; padding: 11px 6px 6px 12px; }
 .pages-tab-content a { margin-bottom: 16px; display: block; color: #909090; }
 .pages-tab-content a:hover { color: #ffffff; }
 .pages-tab-content a:last-child { margin-bottom: 13px; }
@@ -341,9 +341,9 @@ footer { background-color: #212121; }
 
 /* News Letter Starts Here */
 .footer-newsletter h3 { margin-bottom: 26px; }
-.footer-newsletter input { color: #909090; border: 1px solid #757575; border-radius: 4px; font-size: 14px; font-family: "Open Sans"; padding: 14px; padding-top: 13px; margin-left: 0.5px; padding-left: 13.5px; padding-bottom: 11px; width: 100%; background: transparent; margin-bottom: 10.5px; }
-.footer-newsletter input:last-of-type { padding-bottom: 85px; }
+.footer-newsletter input { color: #909090; border: 1px solid #757575; border-radius: 4px; font-size: 14px; font-family: "Open Sans"; padding-right: 14px; padding-top: 13px; margin-left: 0.5px; padding-left: 13.5px; padding-bottom: 11px; width: 100%; background: transparent; margin-bottom: 10.5px; }
 .footer-newsletter button { color: #ffffff; background-color: #303030; padding: 10px; font-family: "Open Sans"; font-weight: 600; border: none; border-radius: 4px; text-transform: uppercase; margin-left: 2px; margin-top: 1px; letter-spacing: 1px; cursor: pointer; width: 100%; }
+.footer-newsletter textarea { background: transparent; border-radius: 4px; padding-left: 13.5px; padding-top: 12px; padding-bottom: 10px; font-family: "Open Sans"; font-size: 14px; margin-bottom: 6px; resize: none; width: 100%; margin-left: 0.5px; color: #909090; }
 /* News Letter Ends Here */
 
 /* Footer Bottom Starts Here */
